@@ -1,3 +1,4 @@
+#모듈 임포팅
 import json
 import requests
 import urllib
@@ -5,6 +6,7 @@ import threading
 import sys
 import os
 
+#크롤 정의
 def croll(data, hitomi_no):
     print("https://0a.hitomi.la/galleries/" + hitomi_no + "/" + data)
     urllib.request.urlretrieve("https://0a.hitomi.la/galleries/" + hitomi_no + "/" + data, "download/" + data)
