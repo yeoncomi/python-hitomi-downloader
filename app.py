@@ -19,8 +19,8 @@ if __name__ == "__main__":
         os.makedirs("download")
 
     index = str(input("Enter the hitomi(exthntai) number: "))
-    Hitomi_js = requests
-        .get("https://hitomi.la/galleries/" + index + ".js")
+    Hitomi_js = requests\
+        .get("https://hitomi.la/galleries/" + index + ".js")\
         .text.replace("var galleryinfo = ", "")
     Hitomi_list = json.loads(Hitomi_js)
 
